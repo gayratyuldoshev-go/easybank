@@ -1,81 +1,52 @@
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+.hero {
+    background-color: #f8f8f8;
+    background-image: url("../img/hero-bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 700px) calc(50% - 40px);
+    padding-bottom: 170px;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Public Sans", "Arial", sans-serif;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.container {
-  max-width: 1440px;
-  padding-left: 165px;
-  padding-right: 165px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.header-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-}
-
-.logo-img {
-    display: inline-block;
-    vertical-align: baseline;
-}
-
-.nav-list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-}
-
-.nav-link {
-    text-decoration: none;
+.hero-name {
+    max-width: 394px;
     font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: -0.107692px;
-    color: #9597A5;
-    padding: 14px 15px 32px 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 100;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -1px;
+    color: #2D314D;
+    padding-bottom: 24px;
+    padding-top: 170px; 
 }
 
-.request-invite {
+.hero-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: -0.28125px;
+    color: #9597A5;
+    max-width: 447px;
+    padding-bottom: 36px;
+}
+
+.request {
     text-decoration: none;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 28px;
     color: #FFFFFF;
-    padding: 8px 36px 8px 32px;
+    padding: 13px 36px 13px 32px;
     background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
-    border-radius: 22px;
-    margin-left: 25px;
+    border-radius: 22px;    
 }
 
-
+.phones {
+    background-image: url("../img/phone1.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 475px) calc(50% - 120px);
 }
