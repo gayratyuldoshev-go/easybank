@@ -72,6 +72,10 @@ body {
     display: flex;
 }
 
+.nav-item:not(:first-child) {
+    margin-left: 30px   ;
+}
+
 .nav-link {
     text-decoration: none;
     font-style: normal;
@@ -80,7 +84,30 @@ body {
     line-height: 16px;
     letter-spacing: -0.107692px;
     color: #9597A5;
-    padding: 14px 15px 32px 15px;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+    padding: 14px 0 32px 0;
+}
+
+.nav-link::after {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    content: "";
+    height: 4px;
+    background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+}
+
+.nav-link:hover::after {
+    display: block;
+}
+
+.nav-link:hover {
+    color: #2D314D;
 }
 
 .request-invite {
@@ -140,6 +167,16 @@ body {
     padding: 13px 36px 13px 32px;
     background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
     border-radius: 22px;    
+}
+
+.request:hover {
+    color: #fff;
+    background: linear-gradient(135deg, #bcf2cb 0%, #9ed0dd 99.58%);
+}
+
+.request-invite:hover {
+    color: #fff;
+    background: linear-gradient(135deg, #bcf2cb 0%, #9ed0dd 99.58%);
 }
 
 .phone-img-one {
@@ -364,6 +401,70 @@ body {
     color: #9597A5;
     padding-bottom: 24px;
 }
+
+.footer {
+    background-color: #2D314D;
+    padding: 48px 0;
+}
+
+.footer-part {
+    display: flex;
+}
+
+.icons {
+    margin-top: 50px;
+}
+
+.social-media {
+    color: #fff;
+    margin-right: 13px;
+}
+
+.social-media:hover {
+    color: #30C88F;
+}
+
+.footer-nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 131px;
+    justify-content: space-between;
+}
+
+.footer-item {
+    padding-bottom: 8px;
+    padding-top: 5px;
+    width: 50%;
+}
+
+.footer-link {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: -0.234375px;
+    color: #FFFFFF;
+}
+
+.footer-link:hover {
+    color: #30C88F;
+}
+
+.footer-right {
+    margin-top: 10px;
+    display: inline-block;
+    text-align: right;
+    margin-left: auto;
+}
+
+.bottom {
+    margin: 0;
+    padding-top: 24px;
+}
+
 
 
 @media
