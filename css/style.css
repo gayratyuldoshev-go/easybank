@@ -370,9 +370,11 @@ body {
     line-height: 18px;
     letter-spacing: -0.15625px;
     color: #9597A5;
-    padding-top: 25px;
     padding-left: 24px;
-    padding-bottom: 8px;
+}
+
+.img {
+    padding-bottom: 25px;
 }
 
 .theme {
@@ -383,10 +385,15 @@ body {
     padding-left: 24px;
     font-style: normal;
     font-weight: 100;
+    padding-top: 8px;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: -0.285714px;
     color: #2D314D;
+}
+
+.theme:hover {
+    color: #30C88F;
 }
 
 .ideas {
