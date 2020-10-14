@@ -33,6 +33,8 @@ body {
   padding-right: 25px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+
 }
 
 .header {
@@ -94,13 +96,10 @@ body {
 }
 
 .hero {
-    background-color: #F2F2F2;
+    background-color: #fafafa;
     background-image: url("../img/hero-bg-desktop.svg");
     background-repeat: no-repeat;
     background-position: calc(50% + 600px) calc(50% - 45px);
-    background-size: contain;
-    position: relative;
-    z-index: 1;
     padding: 240px 0;
     background-size: 1391px 1035px;
 }
@@ -145,10 +144,10 @@ body {
 
 .phone-img-one {
     position: absolute;
-    z-index: 1;
-    top: -9%;
-    right: -10%;
-    display: block;
+    top: -96%;
+    right: -24%;
+    width: 850px;
+    height: 1020px;
 }
 
 .second-section {
@@ -181,6 +180,191 @@ body {
     letter-spacing: -0.28125px;
     color: #9597A5;
 }
+
+.service-name {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.428571px;
+    color: #2D314D;
+    padding-bottom: 26px;
+}
+
+.service-name-two {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.428571px;
+    color: #2D314D;
+    padding-bottom: 26px;
+}
+
+.service-name-three {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.428571px;
+    color: #2D314D;
+    padding-bottom: 26px;
+}
+
+.service-name-four {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.428571px;
+    color: #2D314D;
+    padding-bottom: 26px;
+}
+
+.service-name::before {
+    content: "";
+    width: 72px;
+    height: 72px;
+    display: block;
+    background-image: url("../img/service-one.svg");
+    margin-top: 72px;
+    margin-bottom: 40px;
+}
+
+.service-name-two::before {
+    content: "";
+    width: 72px;
+    height: 72px;
+    display: block;
+    background-image: url("../img/service-two.svg");
+    margin-top: 72px;
+    margin-bottom: 40px;
+}
+
+.service-name-three::before {
+    content: "";
+    width: 72px;
+    height: 72px;
+    display: block;
+    background-image: url("../img/service-three.svg");
+    margin-top: 72px;
+    margin-bottom: 40px;
+}
+
+.service-name-four::before {
+    content: "";
+    width: 72px;
+    height: 72px;
+    display: block;
+    background-image: url("../img/service-four.svg");
+    margin-top: 72px;
+    margin-bottom: 40px;
+}
+
+.service-text {
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 255px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.25px;
+    color: #9597A5;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 94px;
+}
+
+.third-section {
+    background-color: #f2f2f2;
+}
+
+.items {
+    width: 255px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.items:not(:last-child) {
+    margin-right: 55px;
+}
+
+.name {
+    font-style: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    font-weight: 100;
+    font-size: 40px;
+    line-height: 64px;
+    letter-spacing: -0.714286px;
+    color: #2D314D;
+}
+
+.article-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    padding-bottom: 80px;
+}
+
+.links {
+    text-decoration: none;
+}
+
+.author-name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: -0.15625px;
+    color: #9597A5;
+    padding-top: 25px;
+    padding-left: 24px;
+    padding-bottom: 8px;
+}
+
+.theme {
+    width: 207px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.285714px;
+    color: #2D314D;
+}
+
+.ideas {
+    margin: 0;
+    padding-left: 24px;
+    max-width: 207px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.203125px;
+    color: #9597A5;
+    padding-bottom: 24px;
+}
+
 
 @media
     only screen and (-webkit-min-device-pixel-ratio: 2),
