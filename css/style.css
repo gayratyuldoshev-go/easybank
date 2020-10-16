@@ -422,13 +422,12 @@ body {
     margin-top: 50px;
 }
 
-.social-media {
-    color: #fff;
+.social-media:not(:last-child) {
     margin-right: 13px;
 }
 
-.social-media:hover {
-    color: #30C88F;
+.social-media:hover path {
+    fill: #30C88F;
 }
 
 .footer-nav {
@@ -471,6 +470,7 @@ body {
     margin: 0;
     padding-top: 24px;
 }
+
 
 
 
